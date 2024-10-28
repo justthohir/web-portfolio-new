@@ -28,6 +28,15 @@ const CONFIG = {
       // To hide the `External Projects` section, keep it empty.
       projects: [
         {
+          title: 'Cost Optimization on GCP with Kubernetes',
+          description:
+            'Leveraging Google Kubernetes Engine (GKE) for cost optimization',
+          imageUrl: '/images/cost-optimization.jpg',
+          link: 'cost-optimization',
+          repo: '#',
+          tools: 'Docker / Kubernetes / GKE / GCP',
+        },
+        {
           title: 'GitHub Action deployment on Cloud VM',
           description: 'CI/CD Web Portfolio with ReactJS & Docker',
           imageUrl: '/images/web-portfolio.jpg',
@@ -97,14 +106,15 @@ const CONFIG = {
     'Docker, Kubernetes',
     'GCP, GCE, GKE',
     'Cloudflare WAF',
-    'Ansible, Shell, Bash',
+    'Ansible, Helm',
+    'Shell, Bash',
     'Prometheus, Grafana, ELK Stack',
+    'SQL, MySQL, PostgreSQL, InfluxDB',
     'Proxy Manager, SonarQube',
     'Haproxy, Nginx, Apache',
     'Linux, Ubuntu',
     'PHP, Laravel',
     'JS, VueJS, ReactJS, NextJS, NodeJS',
-    'SQL, MySQL, PostgreSQL',
     'Version Control / Git',
     'CSS, Bootstrap, Tailwind',
   ],

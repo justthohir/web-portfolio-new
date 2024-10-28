@@ -3,6 +3,7 @@ import WebPortfolio from '../project-detail/WebPortfolio';
 import RestApi from '../project-detail/RestApi';
 import GitlabRunner from '../project-detail/GitlabRunner';
 import WebRestaurant from '../project-detail/WebRestaurant';
+import CostOptimization from '../project-detail/CostOptimization';
 
 type Item = {
   title: string;
@@ -58,7 +59,7 @@ const UIModalProject: React.FC<Props> = ({ item }) => {
               &#8203;
             </span>
 
-            <div className="relative inline-block h-[725px] p-6 overflow-hidden text-left align-middle transition-all transform bg-base-100 shadow-lg w-3/5 rounded-md">
+            <div className="relative inline-block h-[725px] overflow-y-auto p-6 overflow-hidden text-left align-middle transition-all transform bg-base-100 shadow-lg w-3/5 rounded-md">
               <div className="flex items-start justify-end mx-auto">
                 <button
                   onClick={() => setIsOpen(false)}
@@ -69,11 +70,7 @@ const UIModalProject: React.FC<Props> = ({ item }) => {
               </div>
 
               <div className="flex items-center justify-center mx-auto">
-                <img
-                  className="h-52 rounded-lg"
-                  src="/images/web-portfolio.jpg"
-                  alt=""
-                />
+                <img className="h-52 rounded-lg" src={item.imageUrl} alt="" />
               </div>
 
               <div className="pt-8 pb-4 px-4">
@@ -84,6 +81,7 @@ const UIModalProject: React.FC<Props> = ({ item }) => {
                 <p className="mt-2 text-gray-500">{item.description}</p>
               </div>
 
+              {item.link == 'cost-optimization' ? <CostOptimization /> : null}
               {item.link == 'web-portfolio' ? <WebPortfolio /> : null}
               {item.link == 'rest-api' ? <RestApi /> : null}
               {item.link == 'gitlab-runner' ? <GitlabRunner /> : null}
