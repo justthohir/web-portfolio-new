@@ -59,7 +59,7 @@ const UIModalProject: React.FC<Props> = ({ item }) => {
               &#8203;
             </span>
 
-            <div className="relative inline-block h-[725px] overflow-y-auto p-6 overflow-hidden text-left align-middle transition-all transform bg-base-100 shadow-lg w-3/5 rounded-md">
+            <div className="relative inline-block h-[725px] overflow-y-auto p-6 pb-12 overflow-hidden text-left align-middle transition-all transform bg-base-100 shadow-lg w-4/5 min-[1440px]:w-3/5 rounded-md">
               <div className="flex items-start justify-end mx-auto">
                 <button
                   onClick={() => setIsOpen(false)}
@@ -86,6 +86,15 @@ const UIModalProject: React.FC<Props> = ({ item }) => {
               {item.link == 'rest-api' ? <RestApi /> : null}
               {item.link == 'gitlab-runner' ? <GitlabRunner /> : null}
               {item.link == 'web-restaurant' ? <WebRestaurant /> : null}
+
+              <div className="flex items-start mt-4 ml-4 justify-start mx-auto">
+                <button
+                  onClick={() => setIsOpen(false)}
+                  className="text-xs font-medium capitalize btn btn-outline btn-sm opacity-50"
+                >
+                  Close
+                </button>
+              </div>
             </div>
           </div>
         </div>

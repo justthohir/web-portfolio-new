@@ -1,7 +1,9 @@
+import ImageModal from './ImageModal';
+
 const CostOptimization = () => {
   return (
     <div className="flex flex-wrap">
-      <div className="w-full lg:w-1/2 py-2 px-4">
+      <div className="w-full min-[1440px]:w-1/2 py-2 px-4">
         <h3 className="font-semibold text-base opacity-60">Main Goal</h3>
         <p className="mt-1 text-gray-500">
           - Optimizing Cloud cost ratio across billing service transaction
@@ -48,8 +50,21 @@ const CostOptimization = () => {
           Tools & Technologies
         </h3>
         <p className="mt-1 text-gray-500 font-semibold">
-          ReactJS / Docker / GitHub Action / HAProxy / Cloud VM
+          Docker / Kubernetes / GKE / GCP
         </p>
+      </div>
+      <div className="flex w-full min-[1440px]:w-1/2 py-2 px-4 items-center justify-start flex-col">
+        <img
+          className="h-52 rounded-lg mb-2"
+          src="/images/spec-vm.jpg"
+          alt=""
+        />
+        <ImageModal imageUrl="/images/cost-ratio.jpg" />
+        <img
+          className="h-52 rounded-lg mt-4"
+          src="/images/cost-ratio.jpg"
+          alt=""
+        />
       </div>
     </div>
   );
