@@ -37,12 +37,13 @@ const CONFIG = {
           tools: 'Docker / Kubernetes / GKE / GCP',
         },
         {
-          title: 'GitHub Action deployment on Cloud VM',
-          description: 'CI/CD Web Portfolio with ReactJS & Docker',
-          imageUrl: '/images/web-portfolio.jpg',
-          link: 'web-portfolio',
-          repo: 'https://github.com/justthohir/web-portfolio-new/actions',
-          tools: 'ReactJS / Docker / GitHub Action / HAProxy / Cloud VM',
+          title: 'PostgreSQL Monitoring with Grafana',
+          description:
+            'PostgreSQL Monitoring with Grafana, also use Telegraf & InfluxDB',
+          imageUrl: '/images/grafana-postgre.jpg',
+          link: 'grafana-postgre',
+          repo: '#',
+          tools: 'Telegraf / InfluxDB / Grafana / PostgreSQL / Docker',
         },
         {
           title: 'GitLab CI/CD deployment on Cloud VM',
@@ -59,6 +60,14 @@ const CONFIG = {
           link: 'gitlab-runner',
           repo: 'https://github.com/justthohir/ansible-gitlab-runner',
           tools: 'Ansible / Ubuntu / GitLab Runner / Cloud VM',
+        },
+        {
+          title: 'GitHub Action deployment on Cloud VM',
+          description: 'CI/CD Web Portfolio with ReactJS & Docker',
+          imageUrl: '/images/web-portfolio.jpg',
+          link: 'web-portfolio',
+          repo: 'https://github.com/justthohir/web-portfolio-new/actions',
+          tools: 'ReactJS / Docker / GitHub Action / HAProxy / Cloud VM',
         },
         {
           title: 'GitHub Action deployment on Cloud VM',

@@ -4,6 +4,7 @@ import RestApi from '../project-detail/RestApi';
 import GitlabRunner from '../project-detail/GitlabRunner';
 import WebRestaurant from '../project-detail/WebRestaurant';
 import CostOptimization from '../project-detail/CostOptimization';
+import GrafanaPostgre from '../project-detail/GrafanaPostgre';
 
 type Item = {
   title: string;
@@ -82,8 +83,9 @@ const UIModalProject: React.FC<Props> = ({ item }) => {
               </div>
 
               {item.link == 'cost-optimization' ? <CostOptimization /> : null}
-              {item.link == 'web-portfolio' ? <WebPortfolio /> : null}
+              {item.link == 'grafana-postgre' ? <GrafanaPostgre /> : null}
               {item.link == 'rest-api' ? <RestApi /> : null}
+              {item.link == 'web-portfolio' ? <WebPortfolio /> : null}
               {item.link == 'gitlab-runner' ? <GitlabRunner /> : null}
               {item.link == 'web-restaurant' ? <WebRestaurant /> : null}
 
